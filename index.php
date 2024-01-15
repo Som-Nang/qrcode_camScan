@@ -13,7 +13,8 @@
 <div class="row">
   <div class="col">
     <div style="width:500px;" id="reader"></div>
-  </div><audio id="myAudio1">
+  </div>
+  <audio id="myAudio1">
     <source src="success.mp3" type="audio/ogg">
   </audio>
   <audio id="myAudio2">
@@ -33,8 +34,9 @@
 
         if (matches) {
           // If there are matches, construct a new string based on your requirements
-          str = matches[1];
-          // incase more string+ "&date=" + matches[2] + "&subjectName=" + matches[3];
+          str = matches[1] +
+            "," + matches[2] + "," + matches[3];
+          // incase more string+ "&date=" + matches[2] + "&subjectName=" + + matches[2] +;
         }
 
         var xmlhttp = new XMLHttpRequest();
